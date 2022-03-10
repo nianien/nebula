@@ -1,7 +1,5 @@
 -- 规则词表
-INSERT INTO `rule_word`(`id`, `source`, `word`, `word_type`, `match_type`, `entity_type`, `exclude_words`,
-                        `exclude_users`, `exclude_customers`, `industries`, `status`)
-VALUES (280799, 14, '药', 1, 0, 1, '药流', '12428198', '', '0', 1);
+INSERT INTO `rule_word`(`id`, `source`, `word`, `word_type`, `match_type`, `entity_type`, `exclude_words`, `exclude_users`, `exclude_customers`, `industries`, `status`)VALUES (280799, 14, '药', 1, 0, 1, '药流', '12428198', '', '0', 1);
 INSERT INTO `rule_word`(`id`, `source`, `word`, `word_type`, `match_type`, `entity_type`, `exclude_words`,
                         `exclude_users`, `exclude_customers`, `industries`, `status`)
 VALUES (280804, 14, '华尔街', 1, 0, 1, NULL, NULL, NULL, '0', 1);

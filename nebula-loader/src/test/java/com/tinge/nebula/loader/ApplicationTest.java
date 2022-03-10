@@ -12,8 +12,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
+import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
+import org.springframework.test.context.jdbc.Sql;
 
 import javax.annotation.Resource;
+import javax.sql.DataSource;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
@@ -30,6 +35,8 @@ public class ApplicationTest {
 
     @Resource
     private RuleManager ruleManager;
+    @Resource
+    private DataSource dataSource;
 
     @BeforeEach
     public void setup() {
